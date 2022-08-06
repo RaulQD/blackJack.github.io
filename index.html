@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">BlackJack</h1>
+    </header>
+    <div class="mt-2">
+        <div id="divbotones" class="col text-center p-0">
+            <button id="btnNuevo" class="btn btn-danger btn-size">Nuevo Juego</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary btn-size">Pedir Carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-primary btn-size">Detener</button>
+        </div>
+    </div>
+    <div class="row mt-5 container">
+        <div class="col">
+            <h1 class="text-white">Jugador 1 - <small>0</small></h1>
+            <div class="jugador-cartas divCartas mt-4" id="jugador-cartas">
+                <!-- <img class="carta" src="assets/img/10C.png" alt="10c"> -->
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 container">
+        <div class="col">
+            <h1 class="text-white">Computadora - <small>0</small></h1>
+            <div class="computadoras-cartas divCartas mt-4" id="computadora-cartas">
+                <!-- <img class="carta" src="assets/img/3C.png" alt="10c"> -->
+            </div>
+        </div>
+    </div>
+    <!-- ALERTIFY.JS -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+
+</body>
+
+</html>
